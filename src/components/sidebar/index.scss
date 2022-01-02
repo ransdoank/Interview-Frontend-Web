@@ -1,0 +1,78 @@
+.sidebarCol {
+  //padding-left: 15px;
+  //padding-right: 15px;
+  height: 100%;
+  //background-color: #f5f6f9;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+  //box-shadow: 18px 0px rgba(86, 170, 238, 0.05);
+
+  .header-logo{
+    padding: 15px 0px 0px 15px;
+    margin: 15px;
+    //text-align: center;
+  }
+
+  .side {
+    //background-color: white;
+    //height: 100%;
+    //padding: 35px;
+    display: contents;
+    transition: 0.5s ease-in-out all;
+    //left: -250px;
+    //position: fixed;
+    bottom: 0;
+    top: 0;
+    //width: 250px;
+    //z-index: 1000;
+    overflow-y: auto;
+    //flex-direction: column;
+    padding: 15px 0 15px 15px;
+    min-height: calc(100vh - 25px);
+
+    .menu {
+      color: #a0a0a0;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      .parent {
+        padding: 5px;
+        display: flex;
+        font-weight: bold;
+        :nth-child(1) {
+          height: 23px;
+          width: 23px;
+        }
+        :nth-child(2) {
+          margin-left: 10px;
+        }
+      }
+      .active {
+        //border-radius: 5px;
+        border-right: 5px solid #034EA1;//rgba(174, 205, 248, 0.31);
+        //background: rgba(174, 205, 248, 0.31);
+        color: black;
+      }
+    }
+    // .active {
+    //   background-color: red;
+    // }
+
+    .childMenu {
+      margin-left: 53px;
+      color: #b6b6b6 !important;
+      p {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+      .activeChild {
+        color: #165bb9;
+      }
+    }
+  }
+
+}
